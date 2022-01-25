@@ -73,5 +73,19 @@ namespace Abbassi_buisness_Mangment_System
             }
 
         }
+
+        private void btnAddclient_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddClient.Instance))
+            {
+                panel.Controls.Add(AddClient.Instance);
+                AddClient.Instance.Dock = DockStyle.Fill;
+                AddClient.Instance.BringToFront();
+            }
+            else
+            {
+                AddClient.Instance.BringToFront();
+            }
+        }
     }
 }
