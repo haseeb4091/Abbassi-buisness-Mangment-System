@@ -41,6 +41,7 @@ namespace Abbassi_buisness_Mangment_System
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +69,7 @@ namespace Abbassi_buisness_Mangment_System
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnAddclient);
             this.panel1.Controls.Add(this.btnExpense);
             this.panel1.Controls.Add(this.button1);
@@ -165,6 +167,15 @@ namespace Abbassi_buisness_Mangment_System
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(10, 370);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(154, 36);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Add Client";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -197,6 +208,7 @@ namespace Abbassi_buisness_Mangment_System
         private System.Windows.Forms.Button btnExpense;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAddclient;
+        private System.Windows.Forms.Button button2;
     }
 }
 
