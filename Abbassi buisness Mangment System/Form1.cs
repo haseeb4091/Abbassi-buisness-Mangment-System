@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Abbassi_buisness_Mangment_System
 {
     public partial class Home : Form
     {
+        public static SqlConnection con = new SqlConnection();
+        String c = @"Data Source=APPLE40A5\SQLEXPRESS;Initial Catalog=abms;Integrated Security=True";
         public Home()
         {
+            con.ConnectionString = c;
+            con.Open();
             InitializeComponent();
         }
 
@@ -85,6 +90,20 @@ namespace Abbassi_buisness_Mangment_System
             else
             {
                 AddClient.Instance.BringToFront();
+            }
+        }
+
+        private void btnRecievePayment_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(RecievePayments.Instance))
+            {
+                panel.Controls.Add(RecievePayments.Instance);
+                RecievePayments.Instance.Dock = DockStyle.Fill;
+                RecievePayments.Instance.BringToFront();
+            }
+            else
+            {
+                RecievePayments.Instance.BringToFront();
             }
         }
     }
