@@ -26,7 +26,6 @@ namespace Abbassi_buisness_Mangment_System
         }
         public RecievePayments()
         {
-            Home.con.Open();
             InitializeComponent();
         }
     }

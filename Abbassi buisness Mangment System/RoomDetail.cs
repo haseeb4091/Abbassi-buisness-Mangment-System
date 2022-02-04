@@ -39,7 +39,6 @@ namespace Abbassi_buisness_Mangment_System
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Home.con;
-           ÷
             
         }
     }

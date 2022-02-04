@@ -14,7 +14,8 @@ namespace Abbassi_buisness_Mangment_System
     public partial class Home : Form
     {
         public static SqlConnection con = new SqlConnection();
-        String c = @"Data Source=APPLE40A5\SQLEXPRESS;Initial Catalog=abms;Integrated Security=True";
+        String c = @"Data Source=HP\SQLEXPRESS;Initial Catalog=abms;Integrated Security=True";
+
         public Home()
         {
             con.ConnectionString = c;
