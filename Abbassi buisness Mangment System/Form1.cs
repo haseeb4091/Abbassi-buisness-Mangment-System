@@ -107,5 +107,10 @@ namespace Abbassi_buisness_Mangment_System
                 RecievePayments.Instance.BringToFront();
             }
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
